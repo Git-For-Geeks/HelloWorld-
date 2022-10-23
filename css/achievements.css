@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,300;1,300&family=Scope+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+body{
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+h1{
+  font-size: 40px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 10px solid #26c1ec;
+}
+.container{
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container{
+  color: aqua;
+  width: 50%;
+  border: 5px solid #ff0;
+  margin-top: 5rem;
+  /* height: 30em; */
+  height: fit-content;
+  border-radius: 2em;
+transition: 0.5s;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+.profile{
+ height: 150px;
+ width: 150px;
+ overflow: hidden;
+ /* padding: 40px; */
+ border: 3px solid #ff0;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 1.5rem;
+ transition: 0.5s;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.socials{
+  position: relative;
+  right: 0;
+  padding: 20px;
+}
+.scm{
+  position: relative;
+  bottom: -50px;
+  transform: scale(2);
+  margin: 20px;
+}
+.card-container:hover{
+  /* filter: drop-shadow( 2px 2px 3px #ff0); */
+  box-shadow: 10px 10px rgb(255, 208, 0),
+              20px 20px rgb(255, 123, 0),
+              30px 30px rgb(0, 255, 0),
+              40px 40px rgb(0, 98, 255);
+}
+.profile:hover{
+  box-shadow: 5px 5px 20px #ff0,
+              5px -5px 40px #ff0,
+              -5px 5px 60px #ff0,
+              -5px -5px 80px #ff0,
+              0px 0px 100px #ff0;
+}
+.twitter{
+  cursor: pointer;
+  color: #26c1ec;
+  transition: 0.5s;
+}
+.instagram{
+  cursor: pointer;
+  transition: 0.5s;
+
+  /* color: ; */
+  border-radius: 5px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.lkd-in{
+  cursor: pointer;
+  color: #285AEB;
+  transition: 0.5s;
+
+}
+.trophy{
+  color: #ff0;
+  text-shadow:0px 0px 5px #fdf497,
+              0px 0px 25px #fdf497,
+              0px 0px 50px #fdf497,
+              0px 0px 75px #fdf497,
+              0px 0px 125px #fdf497;
+}
+.twitter:hover, .instagram:hover, .lkd-in:hover{
+  transform: scale(3);
+}
+.name, .posn{
+  transition: 0.5s;
+}
+.name{
+  font-size: 30px;
+  margin: 15px;
+}
+.posn{
+  font-size: 20px;
+}
+.name:hover, .posn:hover{
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+p{
+  margin-top: 3rem;
+}
+::selection{
+  background-color: #fff200;
+  color: #000;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px){
+  .card-container{
+    width: 80%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 0px){
+  .card-container{
+    width: 100%;
+    height: auto;
+  }
+}
