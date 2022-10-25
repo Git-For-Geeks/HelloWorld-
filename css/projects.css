@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,300;1,300&family=Scope+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  /* background: linear-gradient(45deg, #061de3, #e306ca); */
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  /* overflow: scroll; */
+  overflow-y: scroll;
+
+}
+.all-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+
+}
+.container{
+  height: 540px;
+  /* height: fit-content; */
+  width: 350px;
+  /* height: 30rem; */
+  margin: 6rem;
+  perspective: 500px;
+}
+.card{
+  height: 850px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  
+}
+.container:hover > .card{
+  cursor: pointer;
+  transform: rotateY(-180deg) rotateZ(-180deg);
+}
+.front, .back{
+  height: 100%;
+  /* height: fit-content; */
+  width: 100%;
+  box-shadow: 5px 5px 2px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+
+  box-shadow:0 0 10px rgb(0, 0, 0),
+             0 0 20px rgb(0, 0, 0),
+             0 0 30px rgb(0, 0, 0),
+             0 0 40px rgb(0, 0, 0);
+            
+  border: 6px solid #ff0;
+}
+.front{
+  /* background-color: rgb(255, 5, 5); */
+  /* background-image: url(../image/chatbot.jpg); */
+  background-color: #333;
+
+}
+.back{
+  /* background-color: #3a3a3a; */
+  transform: rotateY(-180deg) rotateZ(-180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 4px; */
+}
+.card-title{
+  color: #ff0;
+  margin: 4px;
+}
+.card-content{
+
+  color: #fff;
+  margin-top: 20px;
+  margin: 6px;
+}
+.social{
+  color: #fff;
+  margin: 10px;
+}
+.github-icon{
+  margin: 5px;
+  transform: scale(1.2);
+  transition: 0.5s;
+  margin-left: 10px;
+}
+.github-icon:hover{
+  transform: scale(1.8);
+}
+.front1{
+  background-image: url(../image/chatbot.jpg);
+  /* background-size: cover; */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.front2{
+  background-image: url(../image/movie-system.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.front3{
+  background-image: url(../image/currency-converter.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.front4{
+  background-image: url(../image/fraud-detection.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.front5{
+  background-image: url(../image/online-exam.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.front6{
+  background-image: url(../image/credit-score.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.title{
+  font-size: 60px;
+  margin: 5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  border-bottom: 6px solid #ff0;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 8px #000;
+}
+@media only screen and (max-width: 680px) and (min-width: 561px){
+  .all-cards{
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 560px) and (min-width: 50px){
+.container{
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.card{
+  margin: 0;
+  width: 100%;
+}
+.back{
+  height: fit-content;
+}
+}
