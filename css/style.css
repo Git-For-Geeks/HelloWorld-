@@ -195,7 +195,9 @@
   display: flex;
   justify-content: center;
   padding: 70px;
+  
 }
+
 .btn {
   align-items: center;
   padding: 8px 20px;
@@ -206,6 +208,12 @@
   color: white;
   cursor: pointer;
 }
+
+.btn:hover{
+  background-color: #fff;
+  color: #2f2f2f;
+}
+
 .burger {
   display: none;
   position: absolute;
